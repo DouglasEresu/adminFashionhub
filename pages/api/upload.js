@@ -5,6 +5,8 @@ import mime from 'mime-types';
 import {mongooseConnect} from "@/lib/mongoose";
 import {isAdminRequest} from "@/pages/api/auth/[...nextauth]";
 const bucketName = 'dawid-next-ecommerce';
+import 'dotenv/config';
+
 
 export default async function handle(req,res) {
   await mongooseConnect();
